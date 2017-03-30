@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal">
+
+    <TextView
+            android:text="Enter cofficient matrix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/t" android:textSize="18sp"
+            android:textStyle="normal|bold" android:textAlignment="center" android:layout_marginTop="20dp"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/editText_matrix" android:textStyle="normal|bold" android:textAlignment="center"/>
+    </ScrollView>
+    <TextView
+            android:text="Enter vector of free members"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView12" android:textSize="18sp"
+            android:textStyle="normal|bold" android:textAlignment="center" android:layout_marginTop="20dp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editText_free" android:textStyle="normal|bold" android:textAlignment="center"
+            android:inputType="text"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="20dp" android:id="@+id/textView_system_result"
+            android:textSize="18sp" android:textStyle="normal|bold" android:textAlignment="center"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="20dp"
+            android:id="@+id/textView_system_iteration" android:textSize="18sp" android:textStyle="normal|bold"
+            android:textAlignment="center"/>
+    <Button
+            android:text="Solve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button_solve" android:textStyle="normal|bold"
+            android:textAlignment="center" android:layout_marginTop="50dp"/>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_chords"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.vova.amo.lab4.ChordsActivity">
+
+    <TextView
+            android:text="a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:layout_alignBaseline="@+id/editText_a_chords" android:layout_alignBottom="@+id/editText_a_chords"
+            android:layout_toStartOf="@+id/editText_a_chords" android:textSize="18sp" android:textStyle="normal|bold"/>
+    <TextView
+            android:text="x^3 - 12 * x - 8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:id="@+id/textView6"
+            android:textSize="18sp" android:textAlignment="center" android:textStyle="normal|bold"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal"
+            android:ems="10"
+            android:layout_below="@+id/textView6" android:layout_centerHorizontal="true" android:layout_marginTop="25dp"
+            android:id="@+id/editText_a_chords" android:textStyle="normal|bold" android:textAlignment="center"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:ems="10"
+            android:layout_marginTop="17dp" android:id="@+id/editText_b_chords" android:layout_below="@+id/editText_a_chords"
+            android:layout_alignStart="@+id/editText_a_chords" android:textStyle="normal|bold"
+            android:textAlignment="center"/>
+    <TextView
+            android:text="b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:textSize="18sp" android:textStyle="normal|bold"
+            android:layout_alignBaseline="@+id/editText_b_chords" android:layout_alignBottom="@+id/editText_b_chords"
+            android:layout_toStartOf="@+id/editText_b_chords"/>
+    <TextView
+            android:text="E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_E_chords" android:textSize="18sp"
+            android:textStyle="normal|bold" android:textAlignment="center" android:layout_alignBaseline="@+id/editText_E_chords"
+            android:layout_alignBottom="@+id/editText_E_chords" android:layout_alignStart="@+id/textView13"/>
+    <TextView
+            android:text=" "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_root_error"
+            android:textSize="18sp" android:textStyle="normal|bold" android:textAlignment="center"
+            android:layout_marginBottom="28dp"
+            android:layout_above="@+id/button_chords" android:layout_alignParentStart="true"/>
+    <TextView
+            android:text=" "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_iteration"
+            android:textSize="18sp" android:textAlignment="center" android:textStyle="normal|bold"
+            android:layout_above="@+id/textView_chords_result" android:layout_alignParentStart="true"
+            android:layout_marginBottom="12dp"/>
+    <TextView
+            android:text=" "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_chords_result"
+            android:layout_marginBottom="36dp"
+            android:layout_alignBottom="@+id/textView_root" android:layout_alignParentStart="true"
+            android:textStyle="normal|bold" android:textAlignment="center" android:textSize="18sp"/>
+    <TextView
+            android:text=" "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_root"
+            android:textSize="18sp" android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="11dp"
+            android:layout_above="@+id/textView_root_error" android:layout_alignParentStart="true"/>
+    <Button
+            android:text="Find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_chords"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:textStyle="normal|bold" android:textAlignment="center"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText_E_chords"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/editText_b_chords" android:layout_alignStart="@+id/editText_b_chords"
+            android:textStyle="normal|bold" android:textAlignment="center"/>
+</RelativeLayout>

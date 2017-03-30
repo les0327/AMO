@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AMO</string>
+    <string name="enter_a">Enter a:</string>
+    <string name="enter_b">Enter b:</string>
+    <string name="enter_c">Enter c:</string>
+    <string name="enter_i">Enter i:</string>
+    <string name="enter_m">Enter m:</string>
+    <string name="enter_d">Enter d:</string>
+    <string name="enter_n">Enter n:</string>
+    <string name="enter_g">Enter g:</string>
+    <string name="calculate">Calculate</string>
+    <string name="y1">Y1 = (a/b + b/a) * (a/c + c/a) / (a + b + c)</string>
+    <string name="y_first">y = (d * m^5 - d^5 * m) / i / d, if i = 2n + 1</string>
+    <string name="y_second">y = i * d / (d * m^3 - d^3 * m), if i = 2n</string>
+    <string name="f">f = ∑a^2 + 56 * c * f * g</string>
+    <string name="clear">Clear</string>
+    <string name="load">Load</string>
+    <string name="sort">Sort</string>
+    <string name="input_array_to_sort">Input array to sort</string>
+    <string name="num">Num</string>
+    <string name="text">Text</string>
+    <string name="time">Time:</string>
+</resources>

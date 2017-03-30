@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_sorter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.vova.amo.lab2.SorterActivity">
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="90dp"
+            android:id="@+id/sort_editText" android:singleLine="false" android:selectAllOnFocus="true"
+            android:textAlignment="center"/>
+    <TextView
+            android:text="@string/input_array_to_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" android:layout_marginTop="43dp" android:id="@+id/textViewSort"
+            android:textSize="18sp" android:textStyle="normal|bold" android:textAlignment="center"/>
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup" android:checkedButton="@+id/text_radioButton"
+            android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <RadioButton
+                android:text="@string/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp" android:id="@+id/text_radioButton"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+        <RadioButton
+                android:text="@string/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp" android:id="@+id/num_radioButton"
+                android:textAlignment="center" android:textSize="18sp"
+                android:layout_weight="1"/>
+    </RadioGroup>
+    <Button
+            android:text="@string/sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp" android:id="@+id/sort_button" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    <TextView
+            android:text="Time: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_above="@+id/sort_button"
+            android:layout_centerHorizontal="true" android:layout_marginBottom="28dp" android:id="@+id/time_textView"
+            android:textSize="18sp" android:textStyle="normal|bold" android:textAlignment="center"/>
+</RelativeLayout>
